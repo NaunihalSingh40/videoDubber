@@ -1,0 +1,37 @@
+/* components/VoiceRecorder.css */
+.recorder-container {
+  background-color: #17171e;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recorder-title {
+  margin-bottom: 2rem;
+}
+
+.recorder-timeline {
+  height: 100px;
+  width: 80%;
+  margin: 2rem 0;
+  border: 2px solid #444;
+  position: relative;
+}
+
+.timeline-progress {
+  height: 100%;
+  width: 5%;
+  background: #888;
+  position: absolute;
+  transition: width 0.5s;
+}
+
+.recorder-button {
+  margin-top: 2rem;
+  background-color: #ff4d4f;
+  border: none;
+}

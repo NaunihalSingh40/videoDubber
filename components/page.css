@@ -1,0 +1,122 @@
+/* Reset padding and margin for all elements, apply a universal font and text color */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Sans-serif;
+  color: white;
+}
+
+/* Main container styling, centers its content both vertically and horizontally */
+.main {
+  padding: 80px 72px 72px 72px;
+  background-color: #17171E; /* Dark background color */
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Arrange content in a column */
+}
+
+/* Button positioning for mobile menu button, set in the top left of the page */
+.m-btn {
+  position: absolute;
+  top: 10px;  
+  left: 10px;  
+  z-index: 1000; /* Ensure button is above other elements */
+  background: transparent;
+  cursor: pointer;
+  height: 5vh;
+  width: 5vh;
+}
+
+/* Specific styling for button inside m-btn, make button invisible with no border */
+.m-btn button {
+  background-color: rgb(0, 0, 0, 0); /* Transparent background */
+  border: none;
+}
+
+/* Sub container with column layout, centers its content */
+.subMain {
+  height: 75vh;
+  width: 1296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 20vh;
+}
+
+/* Sticky section for top content links (e.g., "HOW IT WORKS", "JOINER") */
+.smainA {
+  position: sticky;
+  height: 80px;
+  width: 1296px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for anchor elements in the smainA section */
+.smainA > a, .smainA > a {
+  align-self: center;
+  padding: 0px 16px;
+  font-size: 14.4px;
+}
+
+/* Sub-section B styling - centered text */
+.smainB {
+  height: 69.6px;
+  display: flex;
+  width: 1296px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sub-section C styling - centered text with padding */
+.smainC {
+  height: 34.8px;
+  display: flex;
+  width: 1296px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Sub-section E styling - centered text with padding */
+.smainE {
+  height: 44px;
+  display: flex;
+  width: 1296px;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+}
+
+/* Info section styling for information blocks with background, padding, and border */
+.infoSection {
+  background-color: #1f1f2e; /* Darker background to contrast */
+  padding: 20px;
+  border-left: 4px solid #5d5de8; /* Left border to highlight section */
+  color: #fff; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Arrange child elements vertically */
+  margin-bottom: 30px;
+}
+
+/* Title styling inside infoSection */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold; /* Bold title text */
+}
+
+/* Description styling inside infoSection */
+.description {
+  font-size: 1rem;
+  line-height: 1.5; /* Increase spacing between lines */
+}
+
+/* Sub main section 2 styling - arranged in a column */
+#subMain2 {
+  display: flex;
+  flex-direction: column;
+}
