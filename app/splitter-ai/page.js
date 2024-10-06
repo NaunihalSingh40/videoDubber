@@ -1,6 +1,5 @@
 import Dashboard from "@/components/page";
 import React from "react";
-
 export default function page() {
   const infoData = [
     {
@@ -9,7 +8,7 @@ export default function page() {
     },
   ]
   return (
-    <div>
+      <div>
       <Dashboard
         title="Splitter AI"
         subtitle="Split music into separated parts with AI-Powered algorithms"

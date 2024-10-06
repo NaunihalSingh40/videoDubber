@@ -13,14 +13,16 @@
   display: flex; /* Flex container for layout */
   flex-direction: column; /* Arrange items vertically */
   justify-content: space-between; /* Space out items evenly */
+  z-index: 100; /* Ensures it appears on top of other elements */
 }
 
 /* Styling for buttons inside the sidebar */
 .sidebar button {
-  background-color: rgb(0,0,0,0); /* Transparent background */
+  background-color: transparent; /* Transparent background */
   border: none; /* No border */
   width: 100%; /* Full width of the sidebar */
   align-items: center; /* Center align items */
+  cursor: pointer; /* Pointer cursor for buttons */
 }
 
 /* Styling for the sidebar when it is shown (opened) */
@@ -41,6 +43,7 @@
   align-items: center; /* Align items to the center */
   font-size: 16px; /* Font size for text */
   flex-direction: column; /* Arrange content in a column */
+  cursor: pointer; /* Pointer cursor for items */
 }
 
 /* Styling for heading (h2) inside list items */
@@ -49,6 +52,12 @@
   width: 100%; /* Full width of the sidebar */
   display: flex; /* Flex container for layout */
   justify-content: center; /* Center the text horizontally */
+  text-align: center; /* Align text in the center */
+  color: gray;
+}
+
+.sidebar ul li:hover h2{
+  color:white;
 }
 
 /* Styling for anchor tags inside list items */
@@ -67,4 +76,55 @@
 /* Hover effect for list items to change background color */
 .sidebar ul li:hover {
   background-color: #1a1a1a; /* Darker background on hover */
+}
+
+/* Styling for flag button at the bottom of the sidebar */
+.flag-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* White color for icon */
+  cursor: pointer; /* Pointer cursor for flag button */
+  display: flex; /* Flex container for layout */
+  align-items: center; /* Align items to the center */
+  justify-content: center; /* Center the flag horizontally */
+  padding: 5px; /* Padding for the button */
+}
+
+/* Language selection container */
+.language-selection {
+  margin: 10px; /* Margin around the container */
+  display: grid; /* Grid layout for language options */
+  grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
+  gap: 10px; /* Space between grid items */
+  background: #1C1C26; /* Match sidebar background */
+  padding: 10px; /* Padding for the container */
+  border-radius: 10px; /* Rounded corners */
+  overflow-y: auto; /* Scroll if languages exceed view */
+  max-height: 300px; /* Limit the height */
+}
+
+/* Styling for language items inside the selection */
+.language-item {
+  text-align: center; /* Center align language name and flag */
+}
+
+/* Styling for buttons inside the language selection */
+.language-item button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: inherit; /* Inherit text color */
+  cursor: pointer; /* Pointer cursor for language buttons */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling on hover */
+}
+
+/* Scaling effect on hover for language buttons */
+.language-item button:hover {
+  transform: scale(1.1); /* Enlarge button slightly on hover */
+}
+
+/* Styling for language name text inside language selection */
+.language-item p {
+  margin-top: 5px; /* Space above the language name */
+  font-size: 10px; /* Smaller font size for language name */
+  text-align: center; /* Center align text */
 }

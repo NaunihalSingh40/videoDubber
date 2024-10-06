@@ -1,4 +1,5 @@
 import Dashboard from "@/components/page";
+import MyComponent from "@/components/title";
 import React from "react";
 
 export default function page() {
